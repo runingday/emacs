@@ -1,0 +1,46 @@
+
+
+(require 'package)
+(add-to-list 'package-archives
+	     '("melpa" . "http://melpa.org/packages/")t)
+
+(package-initialize)
+
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+
+(org-babel-load-file (expand-file-name "~/.emacs.d/myinit.org"))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(elpy-rpc-python-command "python3")
+ '(elpy-syntax-check-command "pyflakes")
+ '(flymake-compilation-prevents-syntax-check nil)
+ '(imenu-list-auto-resize nil)
+ '(imenu-list-position (quote right))
+ '(imenu-list-size 0.2)
+ '(package-selected-packages
+   (quote
+    (company-anaconda shell-pop all-the-icons zenburn-theme which-key virtualenv use-package try tbx2org tabbar solarized-theme ox-reveal org-bullets markdown-mode jedi imenu-list imenu-anywhere helm-core flymake-python-pyflakes flycheck-pyflakes elpy dumb-jump counsel-projectile company-jedi color-theme cl-lib-highlight auto-org-md ace-window)))
+ '(python-shell-interpreter "python3")
+ '(shell-pop-default-directory "/Users/runningday/")
+ '(shell-pop-full-span t)
+ '(shell-pop-shell-type
+   (quote
+    ("ansi-term" "*ansi-term*"
+     (lambda nil
+       (ansi-term shell-pop-term-shell)))))
+ '(shell-pop-term-shell "/bin/bash")
+ '(shell-pop-universal-key "C-t")
+ '(shell-pop-window-position "bottom")
+ '(shell-pop-window-size 30))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

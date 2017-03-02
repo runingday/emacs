@@ -1,0 +1,255 @@
+#+STARTUP: overview
+* interface tweaks
+#+BEGIN_SRC emacs-lisp
+(setq inhibit-startup-message t)
+(tool-bar-mode -1)
+(electric-pair-mode 1)
+
+(fset 'yes-or-no-p 'y-or-n-p)
+(global-set-key (kbd "<f5>") 'revert-buffer)
+(global-set-key (kbd "M-x") 'helm-M-x)
+#+END_SRC
+
+* try
+#+BEGIN_SRC emacs-lisp
+(use-package try
+  :ensure t)
+#+END_SRC
+
+* which-key
+    Brings up some help
+    #+BEGIN_SRC emacs-lisp
+    (use-package which-key
+      :ensure t
+      :config (which-key-mode))
+    #+END_SRC
+
+* org-bullets
+#+BEGIN_SRC emacs-lisp
+;; Org-mode stuff
+(use-package org-bullets
+  :ensure t
+  :config
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+#+END_SRC
+
+* the rest
+#+BEGIN_SRC emacs-lisp
+
+(setq indo-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
+
+(defalias 'list-buffers 'ibuffer)
+;; (defalias 'list-buffers 'ibuffer-other-window)
+
+;; If you like a tabbar
+
+;(use-package tabbar
+;  :ensure t
+;  :config
+;  (tabbar-mode 1))
+
+
+(use-package ace-window
+  :ensure t
+  :init
+  (progn
+    (setq aw-dispatch-always t)
+    (global-set-key (kbd "M-p") 'ace-window)
+    ;(custom-set-char-faces
+     ;'(aw-leading-char-face
+     ; ((t (:inherit ace-jump-face-foreground :height 3.0)))))
+    ))
+    
+
+;; winner mode 
+(require 'winner)
+
+(defun winner-mode-settings ()
+  "Settings for `winner-mode'."
+
+  ;; disable default winner-mode keybindings
+  (setq winner-dont-bind-my-keys t)
+  (winner-mode t)
+  ;; bind `winner-undo' to `Ctrl-x 4'
+  (define-key ctl-x-map "4" 'winner-undo)
+  ;; bind `winner-redo' to `Ctrl-x 5'
+  (define-key ctl-x-map "5" 'winner-redo)
+  )
+
+(eval-after-load "winner"
+  `(winner-mode-settings))
+
+
+(provide 'winner-mode-settings)
+
+
+(use-package counsel
+  :ensure t
+  )
+
+(use-package swiper
+  :ensure try
+  :bind (("C-s" . swiper)
+	 ("C-r" . swiper)
+	 ("C-c C-r" . ivy-resume)
+	 ("M-x" . counsel-M-x)
+	 ("C-x C-f" . counsel-find-file))
+  :config
+  (progn
+    (ivy-mode 1)
+    (setq ivy-use-virtual-buffers t)
+    (setq ivy-display-style 'fancy)
+    (define-key read-expression-map (kbd "C-r") 'counsel-expression-history)
+    ))
+
+(use-package avy
+  :ensure t
+  :bind ("M-s" . avy-goto-char))
+
+(use-package auto-complete
+  :ensure t
+  :init
+  (progn
+    (ac-config-default)
+    (global-auto-complete-mode t)
+    ))
+
+(use-package color-theme
+  :ensure t)
+
+;(use-package zenburn-theme
+ ; :ensure t
+  ;:config (load-theme 'zenburn t))
+
+
+(use-package solarized-theme
+  :ensure t
+  :config (load-theme 'solarized-light t))
+#+END_SRC
+* Reveal.js
+  #+BEGIN_SRC emacs-lisp
+  (use-package ox-reveal
+  :ensure ox-reveal)
+
+  (setq org-reveal-root "https://cdn.jsdelivr.net/reveal.js/3.0.0/")
+  (setq org-reveal-mathjax t)
+  #+END_SRC
+
+* projectile-mode
+ #+BEGIN_SRC emacs-lisp
+ (defvar local-packages '(projectile auto-complete epc jedi))
+
+ (defun uninstalled-packages (packages)
+  (delq nil
+  (mapcar (lambda (p) (if (package-installed-p p nil) nil p)) packages)))
+
+  ;; This delightful bit adapted from:
+  ;; http://batsov.com/articles/2012/02/19/package-management-in-emacs-the-good-the-bad-and-the-ugly/
+
+  (let ((need-to-install (uninstalled-packages local-packages)))
+  (when need-to-install
+  (progn
+  (package-refresh-contents)
+  (dolist (p need-to-install)
+  (package-install p)))))
+
+#+END_SRC
+* python
+  #+BEGIN_SRC emacs-lisp
+    (require 'package)
+  (add-to-list 'package-archives
+             '("elpy" . "https://jorgenschaefer.github.io/packages/"))
+  (package-initialize)
+  (elpy-enable)
+  (setq elpy-rpc-python-command "python3")
+  (setq python-check-command "pyflakes")
+  (eval-after-load "company"
+  '(add-to-list 'company-backends 'company-anaconda))
+  (add-hook 'python-mode-hook 'anaconda-mode)
+  #+END_SRC
+* dumb-jump
+#+BEGIN_SRC emacs-lisp
+  (use-package dumb-jump
+    :bind (("M-g o" . dumb-jump-go-other-window)
+           ("M-g j" . dumb-jump-go))
+    :config (setq dumb-jump-selector 'ivy)
+    :ensure)
+
+
+#+END_SRC
+* imenu-list
+#+BEGIN_SRC emacs-lisp
+ (unless (package-installed-p 'imenu-list)
+  (package-refresh-contents)
+  (package-install 'imenu-list)
+  (setq imenu-list-focus-after-activation t)
+  
+)
+  
+#+END_SRC
+* markdown-mode
+#+BEGIN_SRC emacs-lisp
+(use-package markdown-mode
+  :ensure t
+  :commands (markdown-mode gfm-mode)
+  :mode (("README\\.md\\'" . gfm-mode)
+         ("\\.md\\'" . markdown-mode)
+         ("\\.markdown\\'" . markdown-mode))
+  :init (setq markdown-command "multimarkdown"))
+#+END_SRC
+* async
+#+BEGIN_SRC emacs-lisp
+(autoload 'dired-async-mode "dired-async.el" nil t)
+(dired-async-mode 1)
+#+END_SRC
+* helm
+#+BEGIN_SRC emacs-lisp
+(require 'helm)
+(add-to-list 'load-path "~/.emacs/elpa/async/async")
+(add-to-list 'load-path "~/.emacs/elpa/helm-core-2.5.2")
+(require 'helm-config)
+
+#+END_SRC
+
+* neotree
+#+BEGIN_SRC emacs-lisp
+(add-to-list 'load-path "~/.emacs.d/elpa/neotree")
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+#+END_SRC
+* all the icon
+#+BEGIN_SRC emacs-lisp
+ (require 'all-the-icons)
+;; or
+(use-package meterial-design-icons)
+#+END_SRC
+* shell-pop
+#+BEGIN_SRC emacs-lisp
+  (add-to-list 'load-path "~/.emacs.d/elpa/shell-pop-20170223.222")
+  (require 'shell-pop)
+  (custom-set-variables
+   ;; custom-set-variables was added by Custom.
+   ;; If you edit it by hand, you could mess it up, so be careful.
+   ;; Your init file should contain only one such instance.
+   ;; If there is more than one, they won't work right.
+   '(shell-pop-default-directory "/Users/runningday/")
+   '(shell-pop-shell-type (quote ("ansi-term" "*ansi-term*" (lambda nil (ansi-term shell-pop-term-shell)))))
+   '(shell-pop-term-shell "/bin/bash")
+   '(shell-pop-universal-key "C-t")
+   '(shell-pop-window-size 30)
+   '(shell-pop-full-span t)
+   '(shell-pop-window-position "bottom"))
+#+END_SRC
+* flycheck
+#+BEGIN_SRC emacs-lisp
+(use-package flycheck
+  :ensure t
+  :init (global-flycheck-mode)
+  '(flycheck-python-pycompile-executable "python3")
+)
+
+
+#+END_SRC

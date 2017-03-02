@@ -1,0 +1,17 @@
+
+
+* Links
+  - [[http://runingday.blog.51cto.com][Here's my Blog]]   (ctrl-c ctrl-l)（ctrl-c ctrl-o打开链接)
+* Lesson 1
+** Part 1
+  Introducing the series and setting up the package manager
+  - Show melpa
+  - set up melpa
+** Installing some packages
+  - installed use-package
+  - installed try
+  - installed which-key
+* Lesson 2
+  Show some org-mode
+  - review init.el
+  - set up Readme.org

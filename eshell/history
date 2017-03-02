@@ -1,0 +1,39 @@
+ls
+exit
+exit
+python3 prog3.py -h
+python3 prog3.py 1 2 3 4
+python3 prog3.py 1 2 3 4 --sum
+ipython3
+ls
+t.join()
+ls
+python3 prog4.py -h
+python3 prog4.py -h
+python4 prog4.py --help
+python3 prog4.py --help
+cd ..
+python3 ls_argparse/prog4.py --help
+python3 ls_argparse/prog4.py --help
+python3 ls_argparse/prog4.py --help
+python3 ls_argparse/prog4.py --help
+python3 ls_argparse/prog4.py --help
+python3 ls_argparse/prog4.py --helpls
+python3 prog5lllls
+ls
+cd ls_argparse/
+ls
+python3 prog5.py 
+python3 prog5.py
+ls
+python3 prog5.py
+python3 prog5.py
+python3 prog5.py
+python3 prog5.py
+python3 prog5.py
+exit
+ls
+exit
+ls
+python3 prog6.py 
+python3 prog6.py 

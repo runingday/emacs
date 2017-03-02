@@ -1,0 +1,218 @@
+((("cmp" .
+   [1 0 0])
+  ("describing" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("print_help" .
+   [0 0 0 0 0 0 0 1 0 1])
+  ("bar_parser" .
+   [0 0 0 0 0 0 2 1 0 0])
+  ("foo_parser" .
+   [0 0 0 1 0 0 2 0 0 0])
+  ("parents" .
+   [2 0 0 0 0 0 0])
+  ("parent_parser" .
+   [0 0 0 0 0 0 1 1 1 1 1 0 0])
+  ("False" .
+   [0 0 1 0 0])
+  ("add_help" .
+   [1 0 0 0 0 0 0 0])
+  ("python3" .
+   [1 0 0 0 0 0 0])
+  ("description" .
+   [1 0 0 0 0 0 0 1 0 0 2])
+  ("Arguments" .
+   [0 0 1 0 1 0 0 0 0])
+  ("verbose" .
+   [0 0 0 0 1 0 0])
+  ("quiet" .
+   [0 0 0 0 1])
+  ("add_mutually_exclusive_group" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("group" .
+   [3 0 0 0 0])
+  ("answer" .
+   [0 0 1 5 0 0])
+  ("format" .
+   [0 0 0 0 0 4])
+  ("verbosity" .
+   [0 0 0 0 0 1 0 0 1])
+  ("y" .
+   [4])
+  ("x" .
+   [5])
+  ("an" .
+   [1 0])
+  ("parse_args" .
+   [0 0 0 0 0 0 0 0 0 3])
+  ("part" .
+   [0 0 0 1])
+  ("args" .
+   [16 0 0 0])
+  ("default" .
+   [0 0 0 0 0 0 1])
+  ("action" .
+   [2 0 0 0 0 1])
+  ("Action" .
+   [0 0 0 0 0 1])
+  ("parse" .
+   [4 0 0 0 0])
+  ("type" .
+   [0 0 0 1])
+  ("shell-pop" .
+   [1 0 0 0 0 0 0 0 0])
+  ("require" .
+   [0 0 0 0 0 0 1])
+  ("load-path" .
+   [1 0 0 0 0 0 0 0 0])
+  ("add-to-list" .
+   [0 0 0 0 0 0 0 0 0 0 1])
+  ("settimeout" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("tar_file" .
+   [2 0 0 0 0 0 1 1])
+  ("local_dir" .
+   [1 0 0 0 0 0 0 0 0])
+  ("name" .
+   [1 0 0 0])
+  ("tar_dir" .
+   [1 0 0 0 0 0 0])
+  ("check_" .
+   [0 0 0 0 0 1])
+  ("host" .
+   [0 0 1 0])
+  ("Exception" .
+   [0 0 0 0 0 0 0 0 1])
+  ("raise" .
+   [0 0 0 0 1])
+  ("call" .
+   [1 0 0 0])
+  ("remote_dir" .
+   [3 0 0 0 1 0 0 0 0 1])
+  ("tmp_dir" .
+   [1 0 0 0 0 0 0])
+  ("timestamp" .
+   [0 0 0 0 0 0 0 0 1])
+  ("prefix" .
+   [1 0 0 0 0 0])
+  ("TemporaryDirectory" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("tempfile" .
+   [0 0 0 0 0 0 1 0])
+  ("strftime" .
+   [0 0 0 0 1 0 0 0])
+  ("now" .
+   [1 0 0])
+  ("datetime" .
+   [0 0 0 0 1 0 0 0])
+  ("__copy_mode_from_local" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("close" .
+   [1 0 0 1 0])
+  ("put" .
+   [2 0 0])
+  ("get_channel" .
+   [0 0 0 0 0 0 1 0 0 0 1])
+  ("sftp" .
+   [7 0 0 0])
+  ("get_transport" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 1])
+  ("from_transport" .
+   [0 0 0 0 0 1 0 1 0 0 0 0 0 0])
+  ("SFTPClient" .
+   [0 0 1 0 0 1 0 0 0 0])
+  ("paramiko" .
+   [0 0 0 1 1 0 0 0])
+  ("remote_file" .
+   [1 0 0 0 0 0 0 1 1 0 3])
+  ("mod" .
+   [1 0 0])
+  ("check_call" .
+   [0 0 0 0 0 0 0 0 0 5])
+  ("local_file" .
+   [1 0 0 0 0 0 0 0 0 4])
+  ("check_output" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("default_print_fun" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("SSHProcess" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("timeout" .
+   [8 0 0 0 0 0 2])
+  ("ret" .
+   [1 0 0])
+  ("recv_exit_status" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("channel" .
+   [0 0 3 1 0 0 0])
+  ("exec_command" .
+   [0 0 0 0 0 0 0 0 0 0 0 2])
+  ("self" .
+   [0 0 0 1])
+  ("stdout" .
+   [3 0 0 0 0 0])
+  ("stdin_fd" .
+   [2 0 0 0 0 0 0 0])
+  ("cmd" .
+   [1 0 0])
+  ("client" .
+   [3 0 3 1 0 1])
+  ("__init__" .
+   [0 0 0 0 0 0 0 1])
+  ("check_connect" .
+   [0 0 0 0 0 0 0 0 0 2 0 0 1])
+  ("stdo" .
+   [0 0 0 1])
+  ("python-mode-hook" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0])
+  ("add-hook" .
+   [0 0 0 0 0 0 0 2])
+  ("jedi:highlight-function-argument" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":init" .
+   [2 0 0 0 0])
+  (":ensure" .
+   [2 0 0 0 0 1 1])
+  ("use-package" .
+   [0 0 0 0 0 0 0 0 0 0 4])
+  ("python-environment-version" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("path" .
+   [2 0 0 0])
+  ("join" .
+   [1 0 1 0])
+  ("stdout_fd" .
+   [4 0 0 0 0 1 2 1 0])
+  ("stderr" .
+   [4 0 0 0 1 0])
+  ("encoding" .
+   [0 0 2 0 4 0 1 1])
+  ("stderr_fd" .
+   [1 0 0 0 1 0 0 1 1])
+  ("read" .
+   [3 0 0 0])
+  ("decode" .
+   [0 0 0 0 3 0])
+  ("print_fun" .
+   [6 0 0 0 0 0 1 2 7])
+  (":config" .
+   [1 0 0 0 0 0 0])
+  ("setq" .
+   [1 0 0 0])
+  ("right" .
+   [1 0 0 0 0])
+  ("usr" .
+   [1 0 0])
+  ("local" .
+   [2 0 0 0 0])
+  ("argparse" .
+   [0 0 2 6 3 2 0 4])
+  ("ArgumentParser" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 0 4])
+  ("add_argument" .
+   [3 0 0 3 0 0 1 0 0 0 0 9])
+  ("AssertionError" .
+   [0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("ArithmeticError" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("parser" .
+   [0 0 0 0 1 0])))

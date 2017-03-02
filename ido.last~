@@ -1,0 +1,56 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/runingday/python_fluent/argparse/" . "ls_argparse/")
+ ("/Users/runingday/python_fluent/" . "argparse/")
+ ("/Users/runingday/sa/" . "pycommon/")
+ ("/Users/" . "runingday/")
+ ("/Users/runingday/" . "python_fluent/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/runingday/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "myinit.org"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/runingday/" (22711 56544 0 0) "简历_尹兴顺_2.pdf" "知识点串讲问题与解答.docx" "xv6-public/" "xv6/" "xcache-3.2.0.tar.bz2" "wget-log" "VTF/" "VirtualBox VMs/" "vim_IDE/" "vim.sh" "vedio/" "Vagrantfile" "v6src/" "unix/" "test1.jmx" "test.py" "static_web/" "sqltxt/" "spf13-vim.sh" "Sources/" "sms.tgz" "sms-ice/" "sms/" "sinatra/" "shopxx-a5-Beta.zip" "sentinel.sh" "sentinel.conf" "sensorsdata/" "sensors-analytics-env-checker-7.tar.gz" "sensors-analytics-env-checker-7/" "sensors-analytics-1.6.1975-standalone.tar.bz2" "sensors-analytics-1.6.1975-standalone/" "sensors" "sample/" "sa/" "s8day8monitor/" "report/" "redis-conn.py" "redis/" "python_fluent/" "python/" "PycharmProjects/" "Public/" "pip.txt" "Pictures/" "phpMyAdmin-4.3.5-all-languages.zip" "php-5.4.40.tar.bz2" "php-5.3.3.tar.gz" "pay/" "paramiko-1.10.1.tar.gz" "paramiko-1.10.1/" "pam_mysql-0.7RC1.tar.gz" "package.box" "optools/" "openvpn/" "nginx-1.10.1.tar.gz.1" "nginx-1.10.1.tar.gz" "myinit.org" "Music/" "Movies/" "mha4mysql-node-0.56-0.el6.noarch.rpm" "members/" "mariadb-5.5.46-linux-x86_64.tar.gz" "loganalyzer-3.6.5.tar.gz" "linuxc/" "Linux_Programming/" "linux-2.6.32.tar.gz" "Linux xmind图/" "Library/" "largeFlow_Architecture/" "kubuntu-16.04-desktop-amd64.iso" "kubernetes/" "kebernet" "jmeter.log" "iterm2-zmodem/" "httpd-2.4.10.tar.bz2" "haskell/" "golang/" "fonts/" "Files/" "epel/" "Emacs_exercises/" "Emacs-25.1-1-universal.dmg" "ecshop/" "eclim_2.6.0.jar" "Downloads/" "Documents/" "docker" "Desktop/" "ddaccount/" "data.json" "cpp/" "cms/" "ClionProjects/" "CentOS-7-x86_64-Everything-1511.iso" "c/" "bigfile" "b.txt" "atom-one-dark-terminal/" "atom-dark-syntax/" "args.txt" "apr-util-1.5.3.tar.bz2" "apr-1.5.0.tar.bz2" "Applications (Parallels)/" "Applications/" "after-sale/" "a.txt" "=" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-PengXiaolong的MacBook Pro-5.2" ".zcompdump-PengXiaolong的MacBook Pro-5.0.8" ".zcompdump-MacBook-5.2" ".Xauthority" ".wget-hsts" ".w3m/" ".vt_locations" ".vimviews/" ".vimundo/" ".vimswap/" ".vimrc~" ".vimrcbak" ".vimrc_bk" ".vimrc.local" ".vimrc.bundles.local" ".vimrc.bundles" ".vimrc.before.local" ".vimrc.before" ".vimrc.20161213_1481597740" ".vimrc-12-13" ".vimrc" ".viminfz.tmp" ".viminfy.tmp" ".viminfx.tmp" ".viminfw.tmp" ".viminfv.tmp" ".viminfu.tmp" ".viminft.tmp" ".viminfs.tmp" ".viminfo.tmp" ".viminfo" ".vimbackup/" ".vim-12-13/" ".vim/" ".vagrant.d/" ".vagrant/" ".Trash/" ".tmux.conf.bak" ".tmux.conf" ".subversion/" ".ssh/" ".spf13-vim-3/" ".screenrc" ".rnd" ".rediscli_history" ".pythonstartup" ".pythonhistory" ".pylint.d/" ".p2/" ".oracle_jre_usage/" ".oh-my-zsh/" ".npm/" ".NERDTreeBookmarks" ".mysql_history" ".matplotlib/" ".m2/" ".local/" ".lesshst" ".kube/" ".ipython/" ".ideavimrc" ".gnome2/" ".gitconfig" ".ghc/" ".emacs.d/" ".eclipse/" ".eclim/" ".DS_Store" ".docker/" ".cups/" ".config/" ".cisco/" ".CFUserTextEncoding" ".cache/" ".boot2docker/" ".bashrc" ".bash_sessions/" ".bash_history" ".atom/" ".anyconnect" "..vimrc.un~" "-X" "--data-urlencode" "-%C1+%B8.htm" "../" "./")
+
+ ("/Users/runingday/.emacs.d/" (22711 47561 0 0) "tramp" "snippets/" "samples/" "recentf~" "recentf" "Readme.org~" "Readme.org" "projectile-bookmarks.eld" "myinit.org~" "myinit.org[*Org Src myinit.org[ emacs-lisp ]*]~" "myinit.org[*Org Src myinit.org[ emacs-lisp ]*]" "myinit.org" "myinit.el~" "myinit.el" "lesson4-notes.org~" "lesson4-notes.org" "init.el~" "init.el" "ido.last~" "ido.last" "games/" "eshell/" "emacs-ipython-notebook/" "elpa/" "auto-save-list/" "anaconda-mode/" "ac-comphist.dat" ".python-environments/" ".cask/" "#lesson4-notes.org#" "../" "./")
+
+ ("/Users/runingday/python_fluent/argparse/ls_argparse/" (22711 46253 0 0) "prog6.py~" "prog6.py" "prog5.py~" "prog5.py" "prog4.py~" "prog4.py" "prog3.py~" "prog3.py" "prog2.py~" "prog2.py" "prog.py~" "prog.py" "#prog5.py#" "#prog3.py#" "../" "./")
+
+ ("/Users/runingday/.emacs.d/elpa/" (22711 44447 0 0) "zenburn-theme-20170219.1611/" "yasnippet-20170216.1928/" "which-key-20170209.729/" "virtualenv-20140220.1501/" "use-package-20170218.132/" "try-20160226.730/" "tbx2org-20140224.759/" "tabbar-20160524.1401/" "swiper-20170217.57/" "spaceline-all-the-icons/" "solarized-theme-20161222.109/" "shell-pop-20170223.222/" "s-20160928.636/" "pyvenv-20170211.456/" "pythonic-20160221.1123/" "python-environment-20150310.153/" "projectile-20170106.606/" "popup-20160709.729/" "pkg-info-20150517.443/" "ox-reveal-20161027.226/" "org-bullets-20140918.1137/" "org-20170210/" "neotree/" "myinit.org" "markdown-mode-20161222.1416/" "lorem-ipsum-readme.txt" "jedi-core-20170121.610/" "jedi-20160425.2156/" "ivy-20170217.605/" "imenu-list-20170215.125/" "imenu-anywhere-20160831.356/" "highlight-indentation-20161012.209/" "helm-core-2.5.2/" "font-lock+-20170222.1755/" "flymake-python-pyflakes-20131127.6/" "flymake-easy-20140818.55/" "flycheck-pyflakes-20140630.1521/" "flycheck-20170212.1015/" "find-file-in-project-20161202.2205/" "f-20161002.800/" "epl-20150517.433/" "epc-20140609.2234/" "emacs-async/" "elpy-20170214.318/" "dumb-jump-20161218.110/" "diminish-20151215.915/" "deferred-20161228.1930/" "dash-20170207.2056/" "ctable-20140304.1659/" "counsel-projectile-20170216.1426/" "counsel-20170219.2346/" "concurrent-20161228.1930/" "company-jedi-20151216.1921/" "company-anaconda-20160809.705/" "company-20170218.1913/" "color-theme-20080305.34/" "cl-lib-highlight-20140127.1312/" "bind-key-20161218.1520/" "avy-20170208.148/" "auto-org-md-20160923.708/" "auto-complete-20170124.1845/" "async-20170219.942/" "async/" "archives/" "anaconda-mode-20170214.556/" "all-the-icons-20170217.103/" "ace-window-20170219.256/" "../" "./")
+
+ ("/Users/runingday/.emacs.d/elpa/elpy-20170214.318/" (22703 61767 0 0) "snippets/" "NEWS.rst" "elpy.elc" "elpy.el" "elpy-refactor.elc" "elpy-refactor.el" "elpy-pkg.el" "elpy-django.elc" "elpy-django.el" "elpy-autoloads.el" "elpy/" "../" "./")
+
+ ("/Users/runingday/python_fluent/argparse/" (22709 15005 0 0) "ls_argparse/" "../" "./")
+
+ ("/Users/runingday/python_fluent/" (22709 16523 0 0) "argparse/" ".git/" "../" "./")
+
+ ("/Users/runingday/sa/" (22707 58319 0 0) "sensorsdata.org~" "sensorsdata.org" "sensorsdata.md~" "sensorsdata.md" "sensorsdata.html~" "README.md" "pycommon/" "deploy_view_UI/" ".git/" "../" "./")
+
+ ("/Users/runingday/.emacs.d/elpa/all-the-icons-20170217.103/" (22705 14991 0 0) "data/" "all-the-icons.elc" "all-the-icons.el" "all-the-icons-pkg.el" "all-the-icons-faces.elc" "all-the-icons-faces.el" "all-the-icons-autoloads.el" "../" "./")
+
+ ("/Users/runingday/.emacs.d/elpa/spaceline-all-the-icons/" (22705 15006 0 0) "space-all-the-icons.el" "../" "./")
+
+ ("/Users/runingday/.emacs.d/elpa/helm-core-2.5.2/" (22705 288 0 0) "README.md" "Makefile" "images/" "helm.elc" "helm.el" "helm-utils.elc" "helm-utils.el" "helm-types.elc" "helm-types.el" "helm-tags.elc" "helm-tags.el" "helm-sys.elc" "helm-sys.el" "helm-source.elc" "helm-source.el" "helm-semantic.elc" "helm-semantic.el" "helm-ring.elc" "helm-ring.el" "helm-regexp.elc" "helm-regexp.el" "helm-pkg.el" "helm-org.elc" "helm-org.el" "helm-net.elc" "helm-net.el" "helm-multi-match.elc" "helm-multi-match.el" "helm-mode.elc" "helm-mode.el" "helm-misc.elc" "helm-misc.el" "helm-man.elc" "helm-man.el" "helm-locate.elc" "helm-locate.el" "helm-lib.elc" "helm-lib.el" "helm-info.elc" "helm-info.el" "helm-imenu.elc" "helm-imenu.el" "helm-id-utils.elc" "helm-id-utils.el" "helm-help.elc" "helm-help.el" "helm-grep.elc" "helm-grep.el" "helm-font.elc" "helm-font.el" "helm-files.elc" "helm-files.el" "helm-external.elc" "helm-external.el" "helm-eval.elc" "helm-eval.el" "helm-eshell.elc" "helm-eshell.el" "helm-elscreen.elc" "helm-elscreen.el" "helm-elisp.elc" "helm-elisp.el" "helm-elisp-package.elc" "helm-elisp-package.el" "helm-easymenu.elc" "helm-easymenu.el" "helm-dabbrev.elc" "helm-dabbrev.el" "helm-core-pkg.el" "helm-config.elc" "helm-config.el" "helm-command.elc" "helm-command.el" "helm-color.elc" "helm-color.el" "helm-buffers.elc" "helm-buffers.el" "helm-bookmark.elc" "helm-bookmark.el" "helm-autoloads.el" "helm-apt.elc" "helm-apt.el" "helm-adaptive.elc" "helm-adaptive.el" "emacs-helm.sh" "COPYING" ".gitignore" ".github/" ".git/" "../" "./")
+
+ ("/Users/runingday/sa/pycommon/" (22702 39895 0 0) "utils/" "template.py" "six.py" "scp.py" "redis/" "pypinyin/" "pymysql/" "pydblite/" "ptyprocess/" "pexpect/" "kazoo/" "__pycache__/" "__init__.py" ".gitignore" "../" "./")
+
+ ("/Users/runingday/sa/pycommon/utils/" (22705 12635 0 0) "shell_wrapper.py~" "shell_wrapper.py" "sa_utils.py" "color.py" "__pycache__/" "__init__.py" ".#shell_wrapper.py" "#shell_wrapper.py#" "../" "./")
+
+ ("/.PKInstallSandboxManager-SystemSoftware/" (22703 31481 0 0) "../" "./")
+
+ ("/Users/" (22526 14159 0 0) "Shared/" "runingday/" "Guest/" ".localized" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,0 +1,1 @@
+("~/python_fluent/" "~/sa/" "/usr/local/lib/python3.5/site-packages/")
